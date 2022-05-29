@@ -79,8 +79,7 @@ public class CBTabBarButton: UIControl {
             if _isSelected {
                 tabImage.tintColor = tintColor
             }
-            tabLabel.textColor = tintColor
-            tabBg.backgroundColor = tintColor.withAlphaComponent(0.2)
+            tabLabel.textColor = UIColor.black
         }
     }
 
@@ -107,7 +106,7 @@ public class CBTabBarButton: UIControl {
         tabImage.contentMode = .center
         tabImage.translatesAutoresizingMaskIntoConstraints = false
         tabLabel.translatesAutoresizingMaskIntoConstraints = false
-        tabLabel.font = UIFont.systemFont(ofSize: 14)
+        tabLabel.font = UIFont(name: "Jost-Medium", size: 14)
         tabLabel.adjustsFontSizeToFitWidth = true
         tabBg.translatesAutoresizingMaskIntoConstraints = false
         tabBg.isUserInteractionEnabled = false
