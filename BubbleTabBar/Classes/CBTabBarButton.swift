@@ -156,7 +156,7 @@ public class CBTabBarButton: UIControl {
             self.tabLabel.alpha = 0.0
         }
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
-            self.tabImage.tintColor = .red
+            self.tabImage.tintColor = UIColor.lightGray
         }, completion: nil)
 
     }
